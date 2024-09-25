@@ -1,0 +1,30 @@
+
+###Create Tutorial
+POST localhost:8080/api/tutorials
+Content-Type: application/json
+
+{
+  "title": "univer",
+  "description": "fanlani yopish ucun"
+}
+
+###Post comment
+POST localhost:8080/api/tutorials/1/comments
+Content-Type: application/json
+
+{
+  "content": "zor"
+}
+
+###Get all tutorials
+GET localhost:8080/api/tutorials
+
+### Get comment by id
+GET localhost:8080/api/comment/2
+
+###Get tutorial by id
+GET localhost:8080/api/tutorials/1
+
+### Get all comment
+GET localhost:8080/api/comment/all
+
